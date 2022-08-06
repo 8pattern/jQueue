@@ -1,9 +1,5 @@
 name: Check
-on:
-  push:
-    branches: [ develop ]
-  pull_request:
-    branches: [ main, develop ]
+on: push
 
 jobs:
   test:
@@ -11,6 +7,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
+        with:
+          node-version: 14
       - run: npm ci
       - run: npm test
 
@@ -19,5 +17,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
+        with:
+          node-version: 14
       - run: npm ci
       - run: npm run lint
