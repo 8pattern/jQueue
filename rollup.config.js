@@ -19,8 +19,8 @@ const prodPlugins = [
 export default {
   input: 'src/index.ts',
   output: {
-    file: '',
-    name: '',
+    file: 'dist/jQueue.js',
+    name: 'jQueue',
     format: 'umd'
   },
   plugins: isProduction ? prodPlugins : devPlugins,
