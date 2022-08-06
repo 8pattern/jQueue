@@ -1,5 +1,5 @@
 {
-  "name": "jqueue",
+  "name": "@8pattern/jqueue",
   "version": "0.0.1",
   "description": "Control Concurrency of Asynchronous Functions",
   "scripts": {

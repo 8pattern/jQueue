@@ -3,7 +3,7 @@
 
 ## Usage
 ```javascript
-const JQueue = require('jqueue');
+const JQueue = require('@8pattern/jqueue');
 
 const jQueue = new JQueue({ capicity: 3, });
 
